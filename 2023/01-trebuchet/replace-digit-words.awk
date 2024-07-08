@@ -10,6 +10,6 @@
     gsub("eight", "e8t")
     gsub("nine", "n9e")
     gsub(/[^0-9]/, "")
-    result += substr($0, 1, 1) substr($0, length($0))
+
+    print $0
 }
-END { print result }
